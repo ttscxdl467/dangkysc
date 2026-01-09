@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--Youtube: Netmediacctv-->
+	<title>Đăng ký SC xe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <section class="hero is-primary" style="position:relative; overflow:hidden; padding:20px 10px; height:160px;">
+  <!-- Logo mờ nền -->
+  <img src="logo.png" class="logo-fixed" alt="Logo">
+
+  <div style="position:relative; z-index:1; text-align:center;">
+    <h1 class="hero-title">ĐĂNG KÝ SỬA CHỮA XE Ô TÔ</h1>
+    <h2 class="hero-subtitle">XƯỞNG 467, CỤC HẬU CẦN - KỸ THUẬT QUÂN KHU 4</h2>
+    <h3 class="hero-subtitle">Địa chỉ: CS1: Đường Đặng Thai Mai, P.Vinh Hưng, Nghệ An</h3>
+    <h3 class="hero-subtitle">CS2: 351 Nguyễn Trãi, P.Vinh Hưng, Nghệ An</h3>
+    <h3 class="hero-subtitle">SĐT: 0868.251.690 - 038.3511.764</h3>
+  </div>
+</section>
+	<div style="height: 30px"></div>
+	<div class="container" style="border: solid 2px #00a779; border-radius: 10px" > 
+		<form id="form" class="box" method="POST">
+			
+			<label style="text-align: left; height:50px; padding: 10px; font-weight: bold;color: #1ce064;font-size: 20px;">
+1. THÔNG TIN CHUNG
+</label>
+
+			<div class="field">
+				<label class="label">Họ và tên</label>
+				<div class="control">
+					<input class="input"
+						   type="text"
+						   placeholder="Họ và tên của bạn"
+						   name="Họ và tên" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">SĐT</label>
+				<div class="control">
+					<input class="input"
+						   type="text"
+						   placeholder="Nhập SĐT"
+						   name="SĐT" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Biển số</label>
+				<div class="control">
+					<input class="input"
+						   type="text"
+						   placeholder="Nhập biển số"
+						   name="Biển số" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Địa chỉ</label>
+				<div class="control">
+					<input class="input"
+						   type="text"
+						   placeholder="Nhập địa chỉ"
+						   name="Địa chỉ" />
+				</div>
+			</div>
+
+<label style="text-align: left; height:50px; padding: 10px; font-weight: bold;color: #1ce064;font-size: 20px;">
+2. TÌNH TRẠNG XE, YÊU CẦU SỬA CHỮA
+</label>
+
+			<div class="field">
+				<label class="label">Tình trạng hiện tại</label>
+				<div class="control">
+					<input class="input"
+						   type="text"
+						   placeholder="Nhập tình trạng hiện tại"
+						   name="Tình trạng hiện tại" />
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">Dịch vụ mong muốn</label>
+				<div class="control">
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Thay dầu" /> Thay dầu
+					</label>
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Thay lốp" /> Thay lốp
+					</label>
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Sửa chữa Động cơ" /> Sửa chữa Động cơ
+					</label>
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Sửa chữa Điện – đèn – còi" /> Sửa chữa Điện – đèn – còi
+					</label>
+					</label>
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Kiểm tra, sửa chữa Phanh" /> Kiểm tra, sửa chữa Phanh
+					</label>
+					</label>
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Bảo dưỡng định kỳ" /> Bảo dưỡng định kỳ
+					</label>
+					</label>
+					<label class="radio">
+						<input type="radio" name="Dịch vụ mong muốn" value="Khác" /> Khác
+					</label>
+				</div>
+			</div>
+<label style="text-align: left; height:50px; padding: 10px; font-weight: bold;color: #1ce064;font-size: 20px;">
+3. THỜI GIAN VÀ HÌNH THỨC SỬA CHỮA
+</label>
+
+			<div class="field">
+			<label class="label">Ngày đăng ký sửa</label>
+			<div class="control">
+			  <input
+				class="input"
+				type="date"
+				id="ngayDangKy"
+				placeholder="Nhập ngày đăng ký sửa"
+				name="Ngày đăng ký sửa"
+			  />
+			</div>
+		  </div>
+		  
+
+			<div class="field">
+				<label class="label">Hình thức sửa chữa</label>
+				<div class="control">
+					<label class="radio">
+						<input type="radio" name="Hình thức sửa chữa" value="Đem xe tới sửa" /> Đem xe tới sửa
+					</label>
+					<label class="radio">
+						<input type="radio" name="Hình thức sửa chữa" value="Khách mang xe đến xưởng" /> Khách mang xe đến xưởng
+					</label>
+
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">Ghi chú thêm cho thợ</label>
+				<div class="control">
+					<input class="input"
+						   type="text"
+						   placeholder="Nhập"
+						   name="Ghi chú thêm cho thợ" />
+				</div>
+			</div>
+
+
+			<div class="field is-grouped is-justify-content-center">
+				<div class="control">
+					<button class="button is-primary" type="submit" style="text-align: center" id="submit-button">
+						Hoàn thành
+					</button>
+				</div>
+				<div class="control">
+					<button class="button is-danger" type="button" onclick="getNewRecord()">Cancel</button>
+				</div>
+			</div>
+		</form>
+		<div
+		  id="message"
+		  style="
+			display: none;
+			margin: 20px;
+			font-weight: bold;
+			color: green;
+			padding: 8px;
+			background-color: beige;
+			border-radius: 4px;
+			border-color: aquamarine;
+			
+		  "
+		></div>
+	</div>
+	
+
+    <script>
+		
+      document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Ngăn submit mặc định
+    document.getElementById("message").textContent = "Vui lòng đợi 1 chút...";
+    document.getElementById("message").style.display = "block";
+    document.getElementById("submit-button").disabled = true;
+
+    // Lấy dữ liệu form
+    var formData = new FormData(this);
+
+    // Kiểm tra SĐT để thêm dấu ' giữ số 0
+    var sdt = formData.get("SĐT");
+    if (sdt) {
+        formData.set("SĐT", "'" + sdt);
+    }
+
+    // Chuyển FormData thành chuỗi gửi POST
+    var keyValuePairs = [];
+    for (var pair of formData.entries()) {
+        keyValuePairs.push(pair[0] + "=" + encodeURIComponent(pair[1]));
+    }
+    var formDataString = keyValuePairs.join("&");
+
+    // Gửi lên Google Apps Script
+    fetch("https://script.google.com/macros/s/AKfycbybc457TTatZqbzU3NNb38RX1uhja9N1hXxweRzikBi_YPzveLeHzHPYX1RM3EC1r3f/exec", {
+        redirect: "follow",
+        method: "POST",
+        body: formDataString,
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8",
+        },
+    })
+    .then(function (response) {
+        if (response) return response;
+        else throw new Error("Failed to submit the form.");
+    })
+    .then(function (data) {
+        document.getElementById("message").textContent =
+            "Anh/chị đã đăng ký thành công! Gara sẽ liên hệ sớm với anh chị!";
+        document.getElementById("message").style.backgroundColor = "green";
+        document.getElementById("message").style.color = "beige";
+        document.getElementById("submit-button").disabled = false;
+        document.getElementById("form").reset();
+
+        setTimeout(function () {
+            document.getElementById("message").textContent = "";
+            document.getElementById("message").style.display = "none";
+        }, 2600);
+    })
+    .catch(function (error) {
+        console.error(error);
+        document.getElementById("message").textContent =
+            "Đã xảy ra lỗi khi gửi form.";
+        document.getElementById("message").style.display = "block";
+    });
+});
+    </script>
+<style>
+.logo-fixed {
+  position: absolute;
+  top: 50%;           
+  left: 50%;          
+  transform: translate(-50%, -50%);
+  width: 25vw;        
+  max-width: 150px;   
+  opacity: 0.08;      
+  z-index:0;          
+  pointer-events: none;
+}
+
+/* Header */
+.hero-title {
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin-bottom: 5px;     /* giảm từ 10px xuống 5px */
+  line-height: 1.3;       /* khoảng cách dòng nhỏ hơn */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-subtitle {
+  font-weight: bold;
+  color: #FFF176;
+  font-size: 1rem;
+  margin-bottom: 2px;     /* giảm từ 5px xuống 2px */
+  line-height: 1.3;       /* khoảng cách dòng nhỏ hơn */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive: chữ sẽ co theo màn hình nhỏ */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 5vw;   /* Tự co nhỏ */
+  }
+  .hero-subtitle {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 6vw;
+  }
+  .hero-subtitle {
+    font-size: 3.5vw;
+  }
+}
+</style>
+
+
+  </body>
+</html>
